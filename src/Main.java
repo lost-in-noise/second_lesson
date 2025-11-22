@@ -18,11 +18,16 @@ public class Main {
         System.out.println(courseName.replace('M', 'S'));
 
 
-
         //Java String Concatenation
         String firstLetters = "Man";
         String lastLetters = "go";
         System.out.println(firstLetters.concat(lastLetters));
+
+//        Comparison operators
+        String name1 = "Nino";
+        String name2 = "Nino";
+        System.out.println(name1.equals(name2));
+
     }
 }
 
