@@ -18,7 +18,7 @@ public class Main {
         System.out.println(courseName.replace('M', 'S'));
 
 
-        //Java String Concatenation
+//        Java String Concatenation
         String firstLetters = "Man";
         String lastLetters = "go";
         System.out.println(firstLetters.concat(lastLetters));
@@ -32,38 +32,57 @@ public class Main {
         int b = 5;
         int c = 10;
         int d = 16;
-        int minNum = Math.min(b,c);
+        int minNum = Math.min(b, c);
         System.out.println(minNum);
         int maxNum = Math.max(b, c);
         System.out.println(maxNum);
         System.out.println(Math.sqrt(d));
 
-        System.out.println((int)(Math.random() * 100));
+        System.out.println((int) (Math.random() * 100));
 
 //        Java If ... Else
         int customerAge = 6;
 
-        if (customerAge>=6 && customerAge <=18){
+        if (customerAge >= 6 && customerAge <= 18) {
             System.out.println("გილოცავ, შენ შეგიძლია გახსნა სკოლის მოსწავლის ბარათი");
-        }
-        else if (customerAge >= 19 && customerAge <=24){
+        } else if (customerAge >= 19 && customerAge <= 24) {
             System.out.println("გილოცავ, შენ შეგიძ₾ია გახსნა სტუდენტის ბარათი");
-        }
-        else if (customerAge >= 25 && customerAge<= 64){
+        } else if (customerAge >= 25 && customerAge <= 64) {
             System.out.println("გილოცავ, შენ შეგიძ₾ია გახსნა ბიზნეს ბარათი");
-        }
-        else if (customerAge >= 65){
+        } else if (customerAge >= 65) {
             System.out.println("შენ შეგიძლია გახსნა საპენსიო ბარათი");
 
         } else {
             System.out.println("თქვენ არ შეგიძლიათ გახსნათ ბარათი");
         }
-
+//        ternary Operator
         int minAge = 20;
         int currentAge = 35;
         String validAge = (currentAge < minAge) ? "თქვენ ვერ აიღებთ სესხს" : "გილოცავთ, თქვენ შეგიძლიათ აიღოთ სესხი";
         System.out.println(validAge);
 
+
+//        switch statement
+        String day = "ოთხშაბათი";
+        switch (day) {
+            case "ორშაბათი":
+                System.out.println("პირველი სამუშაო დღე");
+                break;
+            case "სამშაბათი":
+                System.out.println("მეორე სამუშაო დღე");
+                break;
+            case "ოთხშაბათი":
+                System.out.println("მესამე სამუშაო დღე");
+                break;
+            case "ხუთშაბათი":
+                System.out.println("მეოთხე სამუშაო დღე");
+                break;
+            case "პარასკევი":
+                System.out.println("მეხუთე სამუშაო დღე");
+                break;
+            default:
+                System.out.println("დასვენების დღეები");
+        }
 
     }
 }
