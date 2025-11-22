@@ -15,7 +15,14 @@ public class Main {
         System.out.println(courseName.indexOf("e"));
         System.out.println(courseName.charAt(3));
         System.out.println(courseName.contains("s"));
-        System.out.println(courseName.replace('M',  'S'));
+        System.out.println(courseName.replace('M', 'S'));
+
+
+
+        //Java String Concatenation
+        String firstLetters = "Man";
+        String lastLetters = "go";
+        System.out.println(firstLetters.concat(lastLetters));
     }
 }
 
