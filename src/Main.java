@@ -28,6 +28,17 @@ public class Main {
         String name2 = "Nino";
         System.out.println(name1.equals(name2));
 
+//        Java Math Class
+        int b = 5;
+        int c = 10;
+        int d = 16;
+        int minNum = Math.min(b,c);
+        System.out.println(minNum);
+        int maxNum = Math.max(b, c);
+        System.out.println(maxNum);
+        System.out.println(Math.sqrt(d));
+
+        System.out.println((int)(Math.random() * 100));
     }
 }
 
