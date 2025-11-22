@@ -39,6 +39,32 @@ public class Main {
         System.out.println(Math.sqrt(d));
 
         System.out.println((int)(Math.random() * 100));
+
+//        Java If ... Else
+        int customerAge = 6;
+
+        if (customerAge>=6 && customerAge <=18){
+            System.out.println("გილოცავ, შენ შეგიძლია გახსნა სკოლის მოსწავლის ბარათი");
+        }
+        else if (customerAge >= 19 && customerAge <=24){
+            System.out.println("გილოცავ, შენ შეგიძ₾ია გახსნა სტუდენტის ბარათი");
+        }
+        else if (customerAge >= 25 && customerAge<= 64){
+            System.out.println("გილოცავ, შენ შეგიძ₾ია გახსნა ბიზნეს ბარათი");
+        }
+        else if (customerAge >= 65){
+            System.out.println("შენ შეგიძლია გახსნა საპენსიო ბარათი");
+
+        } else {
+            System.out.println("თქვენ არ შეგიძლიათ გახსნათ ბარათი");
+        }
+
+        int minAge = 20;
+        int currentAge = 35;
+        String validAge = (currentAge < minAge) ? "თქვენ ვერ აიღებთ სესხს" : "გილოცავთ, თქვენ შეგიძლიათ აიღოთ სესხი";
+        System.out.println(validAge);
+
+
     }
 }
 
